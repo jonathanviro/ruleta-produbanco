@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    height: auto;
+    margin: 0px;
+    background-image: url(../img/fondo-ruleta.png);
+    background-position: top center;
+    background-color: #1b1b1b;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+html.modal-active,
+body.modal-active {
+    overflow: hidden;
+}
+
+p {
+    font-family: 'Press Start 2P';
+    color: white;
+    font-size: 400%;
+    font-style: normal;
+    text-align: center;
+    margin-bottom: 60px;
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+#app {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    margin: 240px auto;
+}
+
+.marker {
+    position: absolute;
+    width: 16%;
+    left: 43.2%;
+    top: -15%;
+    z-index: 2;
+}
+
+.boton-jugar {
+    position: relative;
+    width: 105px;
+    left: 480px;
+    top: 405px;
+    z-index: 2;
+}
+
+.wheel {
+    width: 70%;
+    height: 70%;
+}
+
+.boton-girar {
+    display: block;
+    width: 250px;
+    cursor: pointer;
+}
+
+.button :hover {
+    opacity: 0.8;
+}
+
+.div-centrado {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.blur {
+    animation: blur 10s;
+}
+
+.black {
+    background-color: black;
+}
+
+.red {
+    background-color: red;
+}
+
+.green {
+    background-color: green;
+}
+
+@keyframes blur {
+    0% {
+        filter: blur(0.5px);
+    }
+    30% {
+        filter: blur(1px);
+    }
+    50% {
+        filter: blur(2px);
+    }
+    80% {
+        filter: blur(1.5px);
+    }
+    95% {
+        filter: blur(0px);
+    }
+}
