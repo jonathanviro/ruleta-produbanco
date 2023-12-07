@@ -4,7 +4,7 @@ let segundoIntento = true;
 let contadorIntento = 0;
 
 const mensajesPremios = {
-    vela: 'VELA',
+    vela: 'ESTUCHE DE VINO',
     regaloSorpresa_1: 'REGALO SORPRESA',
     giftcar_50: 'GIFT CARD DE $50',
     estucheVino: 'ESTUCHE DE VINO',
@@ -13,7 +13,7 @@ const mensajesPremios = {
     botellaVino: 'BOTELLA DE VINO',
     regaloSorpresa_3: 'REGALO SORPRESA',
     giftcar_10: 'GIFT CARD DE $10',
-    reloj: 'PORTARELOJ',
+    reloj: 'BOTELLA DE VINO',
     regaloSorpresa_4: 'REGALO SORPRESA',
     giftcar_100: 'GIFT CARD DE $100',
 };

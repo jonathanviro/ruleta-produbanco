@@ -9,14 +9,14 @@ app.on('ready', () => {
         width: 800,
         height: 600,
         title: 'Ruleta EVENTO',
-        // center: true,
-        // maximizable: false,
+        center: true,
+        maximizable: false,
         webPreferences: {
             nodeIntegration: true,
         },
-        // kiosk: true,
-        // resizable: false, //bloquear reajuste de pantalla
-        // titleBarStyle: 'hidden', //Ocultar la barra de herramientas y de titulo
+        kiosk: true,
+        resizable: false, //bloquear reajuste de pantalla
+        titleBarStyle: 'hidden', //Ocultar la barra de herramientas y de titulo
     });
 
     //Cargar htlmLocal

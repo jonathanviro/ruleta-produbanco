@@ -33,9 +33,9 @@ const premios = {
 
 
 const premiosCategoria_1 = [gradosRegaloSorpresa_1, gradosRegaloSorpresa_2, gradosGiftcar_10, gradosRegaloSorpresa_3, gradosBotellaVino, gradosRegaloSorpresa_4];
-const premiosCategoria_2 = [gradosGiftcar_20, gradosEstucheVino, gradosVela];
-const premiosCategoria_3 = [gradosGiftcar_50, gradosEstucheVino, gradosVela, gradosReloj];
-const premiosCategoria_4 = [gradosGiftcar_100, gradosEstucheVino, gradosVela, gradosReloj];
+const premiosCategoria_2 = [gradosGiftcar_20, gradosRegaloSorpresa_1, gradosReloj, gradosRegaloSorpresa_2];
+const premiosCategoria_3 = [gradosGiftcar_50, gradosVela, gradosRegaloSorpresa_3, gradosEstucheVino];
+const premiosCategoria_4 = [gradosGiftcar_100, gradosVela, gradosRegaloSorpresa_4, gradosEstucheVino];
 
 let grados = 0;
 let indiceAleatorio = 0;
@@ -58,9 +58,10 @@ const girarRuleta = () => {
     if (categoriaSeleccionada === '3') {
         indiceAleatorio = Math.floor(Math.random() * premiosCategoria_3.length);
         grados = premiosCategoria_3[indiceAleatorio];
-        premiosCategoria_3.splice(indiceAleatorio, 1); //Eliminar Premio para que no se reppita en el segundo giro
-        contadorIntento++;
-        segundoIntento = contadorIntento === 2 ? false : true;
+        // premiosCategoria_3.splice(indiceAleatorio, 1); //Eliminar Premio para que no se reppita en el segundo giro
+        // contadorIntento++;
+        // segundoIntento = contadorIntento === 2 ? false : true;
+        segundoIntento = false;
     }
 
     if (categoriaSeleccionada === '4') {
